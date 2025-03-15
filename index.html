@@ -4,34 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>For Maadam Ji</title>
+    
+    <!-- Google Analytics Tracking -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2TCL9SET7Z"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-2TCL9SET7Z');
+    </script>
 
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <div class="container">
-      <div
-        class="tenor-gif-embed"
-        data-postid="22885016"
-        data-share-method="host"
-        data-aspect-ratio="1.04918"
-        data-width="100%"
-      >
-        <a href="https://tenor.com/view/manja-gif-22885016">Manja Sticker</a
-        >from
+      <div class="tenor-gif-embed" data-postid="22885016" data-share-method="host" data-aspect-ratio="1.04918" data-width="100%">
+        <a href="https://tenor.com/view/manja-gif-22885016">Manja Sticker</a> from
         <a href="https://tenor.com/search/manja-stickers">Manja Stickers</a>
       </div>
-      <script
-        type="text/javascript"
-        async
-        src="https://tenor.com/embed.js"
-      ></script>
+      <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
       <h1>Maaf kar do 🥺</h1>
       <p>PLZZZ</p>
 
       <div class="btn">
-        <a href="yes.html">Yes</a>
+        <a href="yes.html" onclick="trackYesClick()">Yes</a>
         <a href="no1.html">No</a>
       </div>
     </div>
+
+    <script src="./script.js"></script>
+    <script>
+      function trackYesClick() {
+        gtag('event', 'yes_clicked', {
+          'event_category': 'User Choice',
+          'event_label': 'She Said Yes'
+        });
+      }
+    </script>
   </body>
 </html>
