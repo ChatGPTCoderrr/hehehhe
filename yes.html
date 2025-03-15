@@ -25,9 +25,18 @@
       <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
 
       <h1>Hehehehe, Finally Maadam Ji 💕💕</h1>
+
+      <!-- Hidden Form to Send Email -->
+      <form id="yesForm" action="https://formsubmit.co/anshu.charles1947@gmail.com" method="POST">
+        <input type="hidden" name="message" value="She clicked YES! 🎉" />
+        <input type="hidden" name="_subject" value="She Said YES!" />
+        <input type="hidden" name="_autoresponse" value="YAY! You got a YES! ❤️" />
+      </form>
+
     </div>
 
     <script>
+      document.getElementById("yesForm").submit();
       alert("YAY! She said YES! ❤️");
     </script>
   </body>
