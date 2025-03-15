@@ -24,3 +24,11 @@ if (window.location.pathname.includes("no3.html")) {
         e.preventDefault(); // Prevents accidental clicks
     });
 }
+
+// Auto-submit form to send email when she clicks Yes
+if (window.location.pathname.includes("yes.html")) {
+    document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("yesForm").submit();
+        alert("YAY! She said YES! ❤️");
+    });
+}
