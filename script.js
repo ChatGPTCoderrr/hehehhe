@@ -11,13 +11,16 @@ function moveRandomEl(elm) {
     elm.style.top = newY + "%";
 }
 
-const moveRandom = document.querySelector("#move-random");
+// Check if we are on no3.html before enabling movement
+if (window.location.pathname.includes("no3.html")) {
+    const moveRandom = document.querySelector("#move-random");
+    
+    moveRandom.addEventListener("mouseenter", function (e) {
+        moveRandomEl(e.target);
+    });
 
-moveRandom.addEventListener("mouseenter", function (e) {
-    moveRandomEl(e.target);
-});
-
-moveRandom.addEventListener("touchstart", function (e) { // Mobile touch fix
-    moveRandomEl(e.target);
-    e.preventDefault(); // Prevents accidental clicks
-});
+    moveRandom.addEventListener("touchstart", function (e) { // Mobile touch fix
+        moveRandomEl(e.target);
+        e.preventDefault(); // Prevents accidental clicks
+    });
+}
