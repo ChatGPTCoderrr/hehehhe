@@ -13,6 +13,7 @@
     justify-content: center;
     align-items: center;
     background-color: #ffe5e5;
+    padding: 20px;
   }
   
   .container {
@@ -21,27 +22,30 @@
     text-align: center;
     align-items: center;
     gap: 20px;
-    max-width: 500px;
+    max-width: 90%;
     margin: 20px;
   }
   
   .container .tenor-gif-embed {
-    max-width: 200px;
+    max-width: 250px;
   }
   
   .container .btn {
     display: flex;
     gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   
   .btn a {
     text-decoration: none;
     color: #111;
     background: #fff;
-    padding: 10px 25px;
+    padding: 12px 30px;
     border-radius: 8px;
     box-shadow: 0.5rem 1rem 3rem hsl(0, 0%, 0%, 0.3);
     transition: all 0.3s ease-in-out;
+    font-size: 18px;
   }
   
   /* Hover effects */
@@ -67,4 +71,16 @@
     50% { transform: translateX(5px); }
     75% { transform: translateX(-5px); }
     100% { transform: translateX(0); }
+  }
+
+  /* Mobile responsiveness */
+  @media (max-width: 600px) {
+    .container .tenor-gif-embed {
+      max-width: 180px;
+    }
+    
+    .btn a {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
   }
