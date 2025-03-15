@@ -1,70 +1,70 @@
 /* author - deepak tiwari */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
-}
-
-body {
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #ffe5e5;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  gap: 20px;
-  max-width: 500px;
-  margin: 20px;
-}
-
-.container .tenor-gif-embed {
-  max-width: 200px;
-}
-
-.container .btn {
-  display: flex;
-  gap: 25px;
-}
-
-.btn a {
-  text-decoration: none;
-  color: #111;
-  background: #fff;
-  padding: 10px 25px;
-  border-radius: 8px;
-  box-shadow: 0.5rem 1rem 3rem hsl(0, 0%, 0%, 0.3);
-  transition: all 0.3s ease-in-out;
-}
-
-/* Hover effects */
-.btn a:first-child:hover { /* Yes button */
-  background: #4CAF50;
-  color: white;
-  box-shadow: 0 0 15px #4CAF50;
-  transform: scale(1.1);
-}
-
-.btn a:last-child:hover { /* No button */
-  background: #FF3B3B;
-  color: white;
-  box-shadow: 0 0 15px #FF3B3B;
-  transform: scale(1.05) rotate(-2deg);
-  animation: shake 0.3s ease-in-out;
-}
-
-/* Shake animation for No button */
-@keyframes shake {
-  0% { transform: translateX(0); }
-  25% { transform: translateX(-5px); }
-  50% { transform: translateX(5px); }
-  75% { transform: translateX(-5px); }
-  100% { transform: translateX(0); }
-}
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffe5e5;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 500px;
+    margin: 20px;
+  }
+  
+  .container .tenor-gif-embed {
+    max-width: 200px;
+  }
+  
+  .container .btn {
+    display: flex;
+    gap: 25px;
+  }
+  
+  .btn a {
+    text-decoration: none;
+    color: #111;
+    background: #fff;
+    padding: 10px 25px;
+    border-radius: 8px;
+    box-shadow: 0.5rem 1rem 3rem hsl(0, 0%, 0%, 0.3);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Hover effects */
+  .btn a:first-child:hover { /* Yes button */
+    background: #4CAF50;
+    color: white;
+    box-shadow: 0 0 15px #4CAF50;
+    transform: scale(1.1);
+  }
+  
+  .btn a:last-child:hover { /* No button */
+    background: #FF3B3B;
+    color: white;
+    box-shadow: 0 0 15px #FF3B3B;
+    transform: scale(1.05) rotate(-2deg);
+    animation: shake 0.3s ease-in-out;
+  }
+  
+  /* Shake animation for No button */
+  @keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+  }
